@@ -25,11 +25,23 @@ export default async function animal({ params }) {
   const data = await response.json();
   const { name, race, species, activityLevel } = data[0];
   return (
-    <main className="m-10">
-      <h1>{name}</h1>
-      <p>{race}</p>
-      <p>{species}</p>
-      <p>{activityLevel}</p>
+    <main className="m-10 bg-gray-100 p-6 w-60">
+      <div className="m-2">
+        <h2 className="text-indigo-700">Name: </h2>
+        <p>{name}</p>
+      </div>
+      <div className="m-2">
+        <h2 className="text-indigo-700">Race: </h2>
+        <p>{race}</p>
+      </div>
+      <div className="m-2">
+        <h2 className="text-indigo-700">Species: </h2>
+        <p>{species}</p>
+      </div>
+      <div className="m-2">
+        <h2 className="text-indigo-700">Activity Level: </h2>
+        <p>{activityLevel}</p>
+      </div>
     </main>
   );
 }

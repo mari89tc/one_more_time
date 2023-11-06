@@ -14,12 +14,12 @@ export default async function Menu() {
 
   return (
     <nav className="m-10">
-      <Link className="pr-4 underline" href="/" prefetch={false}>
+      <Link className="pr-4 underline hover:underline hover:text-blue-400" href="/" prefetch={false}>
         Forside
       </Link>
       {pages.map((page) => {
         return (
-          <Link className="pr-4 underline" key={page.id} href={`/animals/${page.id}`}>
+          <Link className="pr-4 underline hover:underline hover:text-blue-400" key={page.id} href={`/animals/${page.id}`}>
             {page.name}
           </Link>
         );

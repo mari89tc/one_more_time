@@ -4,8 +4,8 @@ export const metadata = {
 };
 export default async function Home() {
   return (
-    <main>
-      <h1>Her er noget data</h1>
+    <main className="m-10">
+      <h1>Klik dig ind på de gældende dyr, og få dig et overblik</h1>
     </main>
   );
 }
